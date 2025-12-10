@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Registration Form</title>
+
+  <!-- CSS FILE LINK -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Online Registration Form</h2>
+
+    <form id="regForm">
+      <label>Name:</label>
+      <input type="text" id="name" maxlength="30" required />
+
+      <label>Email:</label>
+      <input type="email" id="email" required />
+
+      <label>Phone:</label>
+      <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required />
+
+      <label>Course:</label>
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>MBA</option>
+        <option>B.Sc</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
